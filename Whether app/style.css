@@ -1,0 +1,197 @@
+:root {
+    --bg_main: #0a1f44;
+    --text_light: #fff;
+    --text_med: #53627c;
+    --text_dark: #1e2432;
+    --red: #ff1e42;
+    --darkred: #c3112d;
+    --orange: #ff8c00;
+  }
+   
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+  }
+     button {
+    cursor: pointer;
+  }
+    
+  input {
+    -webkit-appearance: none;
+  }
+    
+  button,
+  input {
+    border: none;
+    background: none;
+    outline: none;
+    color: inherit;
+  }
+   
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+   
+  ul {
+    list-style: none;
+  }
+   
+  body {
+    font: 1rem/1.3 "Roboto", sans-serif;
+    background: var(--bg_main);
+    color: var(--text_dark);
+    padding: 1rem;
+  }
+
+
+  /*custom*/
+  /*CUSTOM VARIABLES HERE*/
+ 
+.top-banner {
+    color: var(--text_light);
+  }
+   
+  .heading {
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 0.02em;
+    padding: 0 0 1.875rem 0;
+  }
+   
+  .top-banner form {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+   
+  .top-banner form input {
+    font-size: 2rem;
+    height: 2.5rem;
+    padding: 0.3125rem 0.3125rem 0.625rem;
+    border-bottom: 1px solid;
+  }
+   
+  .top-banner form input::placeholder {
+    color: currentColor; 
+  }
+   
+  .top-banner form button {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 0.9rem 1.25rem;
+    margin-left: 0.9rem;
+    border-radius: 0.3125rem;
+    background: var(--red);
+    transition: background 0.3s ease-in-out;
+  }
+   
+  .top-banner form button:hover {
+    background: var(--darkred);
+  }
+   
+  .top-banner form .msg {
+    position: absolute;
+    bottom: -2.5rem;
+    left: 0;
+    max-width: 28.125rem;
+    min-height: 2.5rem;
+  }
+  .card{
+    background-color: #fff;
+    border-radius: 0.1325rem;
+    padding: 0.625rem;
+    min-width: 25%;
+    display: inline-block;
+    position: relative;
+    top: 2rem;
+    left: 40%;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  }
+  .card:hover {
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+  
+  .ajax-section figcaption {
+    margin-top: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+   
+  .ajax-section .city-temp {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 0.625rem;
+    color: var(--text_dark);
+  }
+   
+  .ajax-section .city sup {
+    font-size: 0.5em;
+  }
+   
+  .ajax-section .city-name sup {
+    padding: 0.2em 0.6em;
+    border-radius: 2rem;
+    color: var(--text_light);
+    background: var(--orange);
+  }
+   
+  .ajax-section .city-icon {
+    margin-top: 0.625rem;
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+      
+  @media screen and (max-width: 700px) {
+   html{
+     font-size: 12px;
+   }
+    .top-banner form {
+      flex-direction: column;
+    }
+     
+    .top-banner form input,
+    .top-banner form button {
+      width: 100%;
+    }
+   
+    .top-banner form button {
+      margin: 20px 0 0 0;
+    }
+     
+    .top-banner form .msg {
+      position: static;
+      max-width: none;
+      min-height: 0;
+      margin-top: 10px;
+    }
+    
+  }
+
+
+  
+   
+  @media screen and (max-width: 1000px) { 
+    html{
+      font-size: 14px;
+    }
+  }
+   
+  @media screen and (max-width: 700px) {
+    html{
+      font-size: 12px;
+    }
+  }
+   
+  @media screen and (max-width: 500px) {  
+    html{
+      font-size: 10px;
+    }
+  }
+
